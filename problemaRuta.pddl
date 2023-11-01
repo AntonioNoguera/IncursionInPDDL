@@ -5,7 +5,7 @@
     Oradea Zerid Arad Timisoara Lugoj Mehadia Dobreta Craiova Pitesti Rimnicu Sibiu Fagaras Bucharest Giurgiu Urziceni Hirsova Eforie Vaslui Iasi Neamt - location 
     Vehiculo1 Vehiculo2 Vehiculo3 Vehiculo4 - vehicle
     Paq1 Paq2 Paq3 Paq4 Paq5 Paq6 Paq7 Paq8 Paq9 Paq10 Paq11 Paq12 - package
-    DronA DronB DronC DronD - drone
+    DronA DronB DronC - drone
   )
 
   (:init
@@ -15,7 +15,14 @@
     (at-vehicle Vehiculo3 Vaslui)
     (at-vehicle Vehiculo4 Giurgiu)
 
-    ;Ubicacioens de
+    ;Ubicaciones de los Drones 
+    (empty-drone DronA)
+    (empty-drone DronB)
+    (empty-drone DronC)
+    (at-drone DronA Oradea)
+    (at-drone DronB Dobreta)
+    (at-drone DronC Hirsova)
+    
 
     ;Ubicaciones de los paquetes
     (at-package Arad Paq1) 

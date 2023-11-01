@@ -86,12 +86,12 @@
       :precondition (and
         (at-drone ?d ?l)       ; El vehículo debe estar en la ubicación
         (at-package ?l ?p)
-        (empty-drone  ?d)
+        (empty-drone ?d)
       )
       :effect (and
       (in-drone ?p ?d)
       (not (at-package ?l ?p))
-      (not (empty-drone))
+      (not (empty-drone ?d))
       )
   )
   
@@ -109,7 +109,7 @@
       :effect (and
       (not(in-drone ?p ?d))
       (at-package ?l ?p)
-      (empty-drone  ?d)
+      (empty-drone ?d)
       )
   )
 
